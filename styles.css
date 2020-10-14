@@ -1,38 +1,83 @@
-body{
-    font-family:Arial, Helvetica, sans-serif;
+/* Color Theme Swatches in Hex */
+.color-theme_depositphotos_64228311-stock-photo-vintage-flower-background-1-hex { color: #012840; }
+.color-theme_depositphotos_64228311-stock-photo-vintage-flower-background-2-hex { color: #011826; }
+.color-theme_depositphotos_64228311-stock-photo-vintage-flower-background-3-hex { color: #F2E1AC; }
+.color-theme_depositphotos_64228311-stock-photo-vintage-flower-background-4-hex { color: #F2A679; }
+.color-theme_depositphotos_64228311-stock-photo-vintage-flower-background-5-hex { color: #3D4A73; }
+
+/* Color Theme Swatches in RGBA */
+.color-theme_depositphotos_64228311-stock-photo-vintage-flower-background-1-rgba { color: rgba(1, 40, 64, 1); }
+.color-theme_depositphotos_64228311-stock-photo-vintage-flower-background-2-rgba { color: rgba(1, 24, 38, 1); }
+.color-theme_depositphotos_64228311-stock-photo-vintage-flower-background-3-rgba { color: rgba(242, 225, 172, 1); }
+.color-theme_depositphotos_64228311-stock-photo-vintage-flower-background-4-rgba { color: rgba(242, 166, 121, 1); }
+.color-theme_depositphotos_64228311-stock-photo-vintage-flower-background-5-rgba { color: rgba(61, 74, 115, 1); }
+
+
+/*
+font-family: 'Lato', 'Quicksand', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Lora', serif; 
+*/
+
+:root {
+    --navy: #012840;
+    --darknavy: #011826;
+    --yellow: #F2E1AC;
+    --tan: #F2A679;
+    --blue:  #3D4A73;
+    --font1: 'lato';
 }
 
-.container{
-    width:80%;
-    margin: 20px auto;
-    border: 3px solid rgb(19, 120, 128);
-    overflow:auto;
-    padding: 15px;
+body {
+    background-color: var(--darknavy);
+    color: var(--tan);
+    font-family: 'Lato', sans-serif;
 }
 
-h1{
-    color: rgb(19, 120, 128);
+.container {
+    margin: auto;
+    padding: 15px 50px;
+    width: 90%;
+    border-top-style: dotted;
+    border-top-color: var(--blue);
+}
+
+header {
+    background-color: var(--darkgray);
+    border: 3px solid var(--tan);
+    padding: 10px 15px;
+    margin: 25px;
+    font-family: 'lora';
+}
+
+h1 {
     text-align: center;
 }
 
-h2{
-    text-align: center;
+dt {
+    font-family: 'quicksand';
 }
 
-nav{
-    text-align: center;
-}
-nav a{
-    text-decoration: none;
-    background-color: rgb(19, 120, 128);
-    border: 2px solid rgb(19, 120, 128);
-    border-radius: 10px;
-    color: rgb(223, 223, 223);
-    padding: 5px 10px;
-    margin-left: 20px;
+main {
+    font-size: 1.5em;
 }
 
-nav a:hover{
-    color:green;
-    background-color:gray;
+a {
+    color: var(--navy);
+    font-weight: bold;
+    font-style: italic;
+    background-color: var(--yellow);
+    padding: 10px 15px;
+    margin: auto;
 }
+
+a:hover {
+    background-color: var(--blue);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Make container for the header, as a class then assign */
